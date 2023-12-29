@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script defer src="./calculator.js"></script>
+</head>
+
+<body>
+    <div class="calc">
+        <div class="screen">
+            <p id="num1"></p>
+            <p id="num2"></p>
+        </div>
+        <div class="buttons">
+            <div class="line">
+                <button type="button" class="numBtn" id="btn7" onclick="insertNum(7)">7</button>
+                <button type="button" class="numBtn" id="btn8" onclick="insertNum(8)">8</button>
+                <button type="button" class="numBtn" id="btn9" onclick="insertNum(9)">9</button>
+                <button type="button" class="operBtn" id="btnDiv" onclick="sign('/')">/</button>
+            </div>
+            <div class="line">
+                <button type="button" class="numBtn" id="btn4" onclick="insertNum(4)">4</button>
+                <button type="button" class="numBtn" id="btn5" onclick="insertNum(5)">5</button>
+                <button type="button" class="numBtn" id="btn6" onclick="insertNum(6)">6</button>
+                <button type="button" class="operBtn" id="btnMult" onclick="sign('x')">x</button>
+            </div>
+            <div class="line">
+                <button type="button" class="numBtn" id="btn1" onclick="insertNum(1)">1</button>
+                <button type="button" class="numBtn" id="btn2" onclick="insertNum(2)">2</button>
+                <button type="button" class="numBtn" id="btn3" onclick="insertNum(3)">3</button>
+                <button type="button" class="operBtn" id="btnMin" onclick="sign('-')">-</button>
+
+            </div>
+            <div class="line">
+                <button type="button" class="numBtn" id="btn0" onclick="insertNum(0)">0</button>
+                <button type="button" class="operBtn" id="btnDot" onclick="clearCalc()">C</button>
+                <button type="button" class="operBtn" id="btnPls" onclick="sign('+')">+</button>
+                <button type="button" class="operBtn" id="btnEqu" onclick="result()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
